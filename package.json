@@ -4,13 +4,18 @@
   "description": "Telegram bot for restaurant Ordering",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "tsc && nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tsc": "tsc"
   },
   "author": "Kosbay",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
-    "node-telegram-bot-api": "^0.30.0"
+    "node-telegram-bot-api": "^0.30.0",
+    "typescript": "^3.6.2"
+  },
+  "devDependencies": {
+    "@types/node": "^12.7.4"
   }
 }
